@@ -1,0 +1,59 @@
+<ion-header style="--background: #d8dade;">
+  <ion-toolbar style="--background: #d8dade;">
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Are you a student or a lecturer?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-radio-group [(ngModel)]="userType">
+        <ion-item>
+          <ion-label>Student</ion-label>
+          <ion-radio value="student"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label>Lecturer</ion-label>
+          <ion-radio value="lecturer"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-card-content>
+  </ion-card> 
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Contact</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Pasword</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirm password</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Phone number</ion-label>
+        <ion-input type="tel"></ion-input>
+       
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button color="secondary" content="fill" size="full">Register</ion-button>
+</ion-content>
+
+
