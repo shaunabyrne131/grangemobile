@@ -16,3 +16,4 @@ export class AppComponent {
   public labels = [];
   constructor() {}
 }
+
