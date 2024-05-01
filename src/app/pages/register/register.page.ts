@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -8,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class RegisterPage implements OnInit {
   userType: string;
 
-  constructor() {
+  constructor(private router: Router) { 
     this.userType = ''; // Initialize userType in the constructor
   }
 
   ngOnInit() {
+  }
+
+  register() {
+    this.router.navigate(['home']);
   }
 }
