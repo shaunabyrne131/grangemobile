@@ -1,16 +1,25 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
+// Import the necessary functions from the Firebase SDKs
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
-export const environment = {
-  production: false
+// Define the Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyAqKtBm9DAYeLpceitXsuDvqfkyVkadUAI",
+  authDomain: "grange-mobile.firebaseapp.com",
+  databaseURL: "https://grange-mobile-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "grange-mobile",
+  storageBucket: "grange-mobile.appspot.com",
+  messagingSenderId: "600970138106",
+  appId: "1:600970138106:web:995f32032773935fb8d443",
+  measurementId: "G-KWQMH9V0RL"
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/plugins/zone-error';  // Included with Angular CLI.
+// Initialize Firebase and Google Analytics
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+// Export the environment configuration
+export const environment = {
+  production: false,
+  firebase: firebaseConfig
+};

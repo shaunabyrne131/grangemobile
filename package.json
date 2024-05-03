@@ -29,6 +29,8 @@
     "@ionic/angular": "^8.0.0",
     "angular-calendar": "^0.31.1",
     "date-fns": "^3.6.0",
+    "firebase": "^10.11.1",
+    "firebaseui": "^6.1.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
