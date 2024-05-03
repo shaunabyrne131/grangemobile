@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'modules',
+    loadChildren: () => import('./modules/modules.module').then( m => m.ModulesPageModule)
+  },
+  {
+    path: 'timetables',
+    loadChildren: () => import('./timetables/timetables.module').then( m => m.TimetablesPageModule)
+  },
   
   
 

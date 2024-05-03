@@ -23,7 +23,7 @@ describe('LecturerService', () => {
         expect(data).toBeTruthy();
         // Add more expectations as needed
 
-        // Call done() to signal that the test is complete
+        // Call done() to signal that the test done
         done();
       },
       error: (error) => {
