@@ -1,7 +1,30 @@
 ion-content {
-    --ion-background-color: #d8dade; 
-  }
+  --ion-background-color: var(--ion-color-secondary);
+}
 
-  ion-button{
-    margin: 10px;
-  }
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+ion-card {
+  width: 90%; 
+  max-width: 400px; 
+  background-color: var(--ion-color-light); 
+}
+
+ion-card-content {
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+ion-item {
+  margin-bottom: 15px;
+}
+
+ion-button {
+  margin-top: 15px; 
+}

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
+import { HttpClientModule } from '@angular/common/http';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { FormsModule } from '@angular/forms'; 
+
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ModulesPageModule } from './modules/modules.module'; // Import ModulesPage
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -13,10 +15,12 @@ import { ModulesPageModule } from './modules/modules.module'; // Import ModulesP
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule, // Include HttpClientModule here
-    ModulesPageModule
+    HttpClientModule,
+    FormsModule,
+  
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+ 

@@ -23,25 +23,20 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
-  {
-    path: 'modules',
-    loadChildren: () => import('./modules/modules.module').then( m => m.ModulesPageModule)
-  },
+  
   {
     path: 'timetables',
-    loadChildren: () => import('./timetables/timetables.module').then( m => m.TimetablesPageModule)
+    loadChildren: () => import('./timetables/timetables.module').then(m => m.TimetablesPageModule)
   },
-  
-  
-
- 
-  
-
+  {
+    path: 'courses',
+    loadChildren: () => import('./courses/courses.module').then( m => m.CoursesPageModule)
+  },
+  {
+    path: 'messageboard',
+    loadChildren: () => import('./messageboard/messageboard.module').then( m => m.MessageboardPageModule)
+  }
 ];
-
-
-
-
 
 @NgModule({
   imports: [

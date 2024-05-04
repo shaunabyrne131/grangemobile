@@ -1,5 +1,5 @@
-<ion-header style="--background: #d8dade;">
-  <ion-toolbar style="--background: #d8dade;">
+<ion-header>
+  <ion-toolbar style="--ion-background-color: var(--ion-color-secondary); color: white;">
     <ion-buttons slot="start">
       <ion-back-button title=""></ion-back-button>
     </ion-buttons>
@@ -14,11 +14,11 @@
     </ion-card-header>
     <ion-card-content>
       <ion-radio-group [(ngModel)]="userType">
-        <ion-item>
+        <ion-item color="clear">
           <ion-label>Student</ion-label>
           <ion-radio value="student"></ion-radio>
         </ion-item>
-        <ion-item>
+        <ion-item color="clear">
           <ion-label>Lecturer</ion-label>
           <ion-radio value="lecturer"></ion-radio>
         </ion-item>
@@ -31,32 +31,29 @@
       <ion-card-title>Contact</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
+      <ion-item color="clear">
         <ion-label position="floating">Name</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item color="clear">
         <ion-label position="floating">Email</ion-label>
         <ion-input type="email"></ion-input>
       </ion-item>
-      <ion-item>
-        <ion-label position="floating">Pasword</ion-label>
+      <ion-item color="clear">
+        <ion-label position="floating">Password</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item color="clear">
         <ion-label position="floating">Confirm password</ion-label>
         <ion-input type="password"></ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item color="clear">
         <ion-label position="floating">Phone number</ion-label>
         <ion-input type="tel"></ion-input>
-       
       </ion-item>
     </ion-card-content>
   </ion-card>
 
-  <ion-button color="secondary" content="fill" size="full" (click)="register()">Register</ion-button>
+  <ion-button style="--background: var(--ion-color-success)" content="fill" size="full" (click)="register()">Register</ion-button>
 </ion-content>
-
-

@@ -4,18 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TimetablesPageRoutingModule } from './timetables-routing.module';
+import { MessageboardPageRoutingModule } from './messageboard-routing.module';
 
-import { TimetablesPage } from './timetables.page';
+import { MessageboardPage } from './messageboard.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TimetablesPageRoutingModule
+    MessageboardPageRoutingModule
   ],
-  declarations: [TimetablesPage]
+  declarations: [MessageboardPage]
 })
-export class TimetablesPageModule {}
-
+export class MessageboardPageModule {}

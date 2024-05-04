@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ModulesPage } from './modules.page';
+import { MessageboardPage } from './messageboard.page';
 
-describe('ModulesPage', () => {
-  let component: ModulesPage;
-  let fixture: ComponentFixture<ModulesPage>;
+describe('MessageboardPage', () => {
+  let component: MessageboardPage;
+  let fixture: ComponentFixture<MessageboardPage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ModulesPage);
+    fixture = TestBed.createComponent(MessageboardPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

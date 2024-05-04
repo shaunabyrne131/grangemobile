@@ -14,3 +14,4 @@ export class LecturerService {
     return this.http.get<any>('json-data-lecturers.php');
   }
 }
+//http://127.0.0.1/

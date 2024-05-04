@@ -11,5 +11,6 @@ export class TimetablesPage implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }
