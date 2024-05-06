@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
 
   login() {
-    this.router.navigate(['home']); // Pass 'home' as an element in an array
+    this.router.navigate(['home']); 
   }
 
   register() {

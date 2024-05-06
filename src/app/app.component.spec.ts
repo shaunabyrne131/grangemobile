@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+/* import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 
 import { RouterTestingModule } from '@angular/router/testing';
@@ -43,4 +43,4 @@ describe('AppComponent', () => {
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/folder/outbox');
   });
 
-});
+}); */

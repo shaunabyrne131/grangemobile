@@ -3,8 +3,8 @@ import { LoginPageForm } from "./login.page.form";
 
 describe('LoginPageForm', () => {
     it('should create login form empty', () => {
-        const loginPageForm = new LoginPageForm(new FormBuilder()); // Corrected variable name
-        const form = loginPageForm.createForm(); // Call the createForm() method
+        const loginPageForm = new LoginPageForm(new FormBuilder()); 
+        const form = loginPageForm.createForm(); 
 
         expect(form).not.toBeNull(); // Check if the form is not null
         expect(form.get('email')).not.toBeNull(); // Check if the email form control is not null
