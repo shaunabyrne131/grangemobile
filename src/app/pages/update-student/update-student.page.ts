@@ -18,7 +18,6 @@ export class UpdateStudentPage implements OnInit {
     const currentNavigation = this.router.getCurrentNavigation();
     if (currentNavigation && currentNavigation.extras.state) {
         this.student = currentNavigation.extras.state['student'];
-        console.log(this.student);
     }
 });
   }

@@ -15,7 +15,6 @@ export class UpdateStudentsService {
   postData(data: any) {
     // Make http request using Http Client;
     //alert(data['studentID']);
-    console.log(data)
     return this.http.post(this.url, data, {
       headers: new HttpHeaders({
         'Accept': 'text/plain',

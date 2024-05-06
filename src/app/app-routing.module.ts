@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'list-modules',
     loadChildren: () => import('./pages/list-modules/list-modules.module').then( m => m.ListModulesPageModule)
   },
+  {
+    path: 'display-location',
+    loadChildren: () => import('./pages/display-location/display-location.module').then( m => m.DisplayLocationPageModule)
+  },
   
  
 ];

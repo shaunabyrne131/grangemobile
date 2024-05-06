@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationExtras, Router } from '@angular/router';
+import { Module } from 'src/app/models/module';
 import { GetModulesService } from 'src/app/services/get-modules.service';
 
 @Component({
@@ -8,7 +10,7 @@ import { GetModulesService } from 'src/app/services/get-modules.service';
 })
 export class ListModulesPage implements OnInit {
 
-  constructor(private getModuleService: GetModulesService) { }
+  constructor(private router: Router,private getModuleService: GetModulesService) { }
 
   modules: any
 
@@ -21,6 +23,17 @@ export class ListModulesPage implements OnInit {
     this.modules = modulesArray
 
     });
+  }
+
+  redirectToLocationPage(module: Module){
+    let navigationExtras: NavigationExtras = {
+      state: {
+      module: module
+      }
+      };
+
+      this.router.navigate(['display-location'], navigationExtras);
+
   }
 
   ngOnInit() {

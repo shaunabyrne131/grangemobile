@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>display-location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">display-location</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <google-map  height="500px"
+  width="100%"
+  [zoom]="zoom"
+  [center]="center">
+  <map-marker
+    [position]="position"
+    [label]="label"
+    [title]="title"
+> </map-marker>
+</google-map>
+</ion-content>
