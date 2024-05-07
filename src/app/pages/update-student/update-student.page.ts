@@ -21,15 +21,14 @@ export class UpdateStudentPage implements OnInit {
     }
 });
   }
-
- updateStudent(student: Student) {
+  updateStudent(student: Student) {
     this.updateStudentService.postData(student).subscribe(
       res => {
-        console.log("Success: Record has been added" + res);
+        alert("Success: Record has been added" + res);
         this.dismiss(true);
       },
       async err => {
-        console.log(err.message);
+        alert(err.message);
       }
     );
   }

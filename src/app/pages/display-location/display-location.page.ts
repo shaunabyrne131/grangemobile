@@ -31,6 +31,14 @@ export class DisplayLocationPage implements OnInit {
   }
 
   ngOnInit() {
-  }
 
-}
+
+  } 
+      goBack() {
+        console.log("Go back button clicked");
+        history.back(); 
+      }
+      
+    }
+    
+

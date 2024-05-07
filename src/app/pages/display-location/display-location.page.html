@@ -1,23 +1,22 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" class="custom-header">
   <ion-toolbar>
-    <ion-title>display-location</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button (click)="goBack()" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="header-title">Location</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="content">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">display-location</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button (click)="goBack()" defaultHref="'/display-location'"></ion-back-button>
+      </ion-buttons>
+      <ion-title size="large">Display Location</ion-title>
     </ion-toolbar>
   </ion-header>
-  <google-map  height="500px"
-  width="100%"
-  [zoom]="zoom"
-  [center]="center">
-  <map-marker
-    [position]="position"
-    [label]="label"
-    [title]="title"
-> </map-marker>
-</google-map>
+  <google-map height="500px" width="100%" [zoom]="zoom" [center]="center">
+    <map-marker [position]="position" [label]="label" [title]="title"></map-marker>
+  </google-map>
 </ion-content>

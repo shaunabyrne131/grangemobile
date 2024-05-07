@@ -1,0 +1,31 @@
+ion-header {
+    ion-toolbar {
+      --background: var(--ion-color-secondary); 
+      --color: #fff; 
+    }
+  }
+  
+  ion-content {
+
+    --ion-text-color: #333; 
+  }
+  
+  ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+    --inner-padding-end: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  ion-label {
+    font-weight: bold;
+  }
+  
+  ion-button {
+    margin-top: 10px;
+  }
+  
+  .page-update-student .data {
+    margin-top: 20px; 
+  }
+  

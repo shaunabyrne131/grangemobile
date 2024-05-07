@@ -1,0 +1,23 @@
+ion-header ion-toolbar {
+  --background: var(--ion-color-secondary);
+  --color: #fff;
+}
+
+ion-content {
+  --ion-text-color: #333;
+}
+
+ion-card-header {
+  font-weight: bold;
+}
+
+.view-location-button {
+  --background: var(--ion-color-secondary);
+  --color: #fff;
+  margin: auto; 
+}
+
+ion-card-title {
+  font-weight: bold; 
+  text-align: center; 
+}

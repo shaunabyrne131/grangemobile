@@ -1,0 +1,33 @@
+ion-header {
+    ion-toolbar {
+      --background: var(--ion-color-secondary);
+      --color: #fff;
+    }
+  }
+  
+  ion-content {
+    --ion-text-color: #333;
+  }
+  
+  ion-card {
+    margin: 10px;
+  }
+  
+  ion-card-header {
+   color: var(--ion-color-secondary);
+  }
+  
+  ion-card-title {
+    font-weight: bold;
+  }
+  
+  ion-card-content {
+    color: #333;
+  }
+  
+  ion-button {
+    margin-top: 10px;
+  
+    
+  }
+  

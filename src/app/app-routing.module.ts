@@ -28,14 +28,7 @@ const routes: Routes = [
     path: 'timetables',
     loadChildren: () => import('./timetables/timetables.module').then(m => m.TimetablesPageModule)
   },
-  {
-    path: 'courses',
-    loadChildren: () => import('./courses/courses.module').then( m => m.CoursesPageModule)
-  },
-  {
-    path: 'messageboard',
-    loadChildren: () => import('./messageboard/messageboard.module').then( m => m.MessageboardPageModule)
-  },
+ 
   {
     path: 'list-students',
     loadChildren: () => import('./pages/list-students/list-students.module').then( m => m.ListStudentsPageModule)
@@ -60,6 +53,8 @@ const routes: Routes = [
     path: 'display-location',
     loadChildren: () => import('./pages/display-location/display-location.module').then( m => m.DisplayLocationPageModule)
   },
+  
+
   
  
 ];

@@ -15,17 +15,13 @@ export class AddStudentPage implements OnInit {
   constructor(private addStudentService: AddStudentService, private modalCtrl: ModalController) { }
 
   addStudent() {
-    //console.log(this.newStudent);
-    // Make a post request using the studentcreate service and subscribe to the
-    // response in order to inform the user of the outcome. In this case, we just
-    // go back to the previous page
     this.addStudentService.postData(this.newStudent).subscribe(
       res => {
-        console.log("Success: Record has been added" + res);
+        alert("Success: Record has been added" + res);
         this.dismiss(true);
       },
       async err => {
-        console.log(err.message);
+        alert(err.message);
       }
     );
   }

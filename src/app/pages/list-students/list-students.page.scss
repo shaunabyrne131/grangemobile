@@ -1,0 +1,25 @@
+ion-header {
+  ion-toolbar {
+    --background: var(--ion-color-secondary); 
+    --color: #fff; 
+  }
+}
+
+ion-content {
+  --ion-text-color: #333; 
+}
+
+.delete-button {
+  --background: var(--ion-color-danger);
+  --color: #fff;
+}
+
+.update-button {
+  --background: var(--ion-color-secondary);
+  --color: #fff;
+}
+
+ion-card-title {
+  font-weight: bold; 
+  text-align: center; 
+}

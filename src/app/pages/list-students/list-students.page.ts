@@ -17,8 +17,7 @@ export class ListStudentsPage implements OnInit {
   constructor(private router: Router, private getStudentService: GetStudentsService, private deleteStudentService: DeleteStudentsService) { }
 
   getStudentData() {
-    // Get the information from the API using Observable
-    // by subscribing to the studentservice Observable 
+
     this.getStudentService.getData().subscribe(result => {
     this.students = result;
     const studentsArray = this.students.students
@@ -56,5 +55,4 @@ export class ListStudentsPage implements OnInit {
   ngOnInit() {
     this.getStudentData();
   }
-
 }

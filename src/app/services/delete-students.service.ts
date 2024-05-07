@@ -12,7 +12,8 @@ export class DeleteStudentsService {
 
   // Create getData() function thats makes http request
   postData(data: any) {
-    // Make http request using Http Client;
+    
+    console.log('student id:' +data)
     return this.http.post(this.url, data, {
       headers: new HttpHeaders({
         'Accept': 'text/plain',
