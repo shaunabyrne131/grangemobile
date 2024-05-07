@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UpdateStudentsService } from 'src/app/services/update-students.service';
-import { ModalController } from '@ionic/angular';
+import { ModalController, AlertController } from '@ionic/angular';
 import { Student } from 'src/app/models/student';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -11,24 +11,41 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateStudentPage implements OnInit {
 
-  student: any
+  student: any;
 
-  constructor(private route: ActivatedRoute, private router: Router, private updateStudentService: UpdateStudentsService, private modalCtrl: ModalController) {
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private updateStudentService: UpdateStudentsService,
+    private modalCtrl: ModalController,
+    private alertController: AlertController
+  ) {
     this.route.queryParams.subscribe(params => {
-    const currentNavigation = this.router.getCurrentNavigation();
-    if (currentNavigation && currentNavigation.extras.state) {
+      const currentNavigation = this.router.getCurrentNavigation();
+      if (currentNavigation && currentNavigation.extras.state) {
         this.student = currentNavigation.extras.state['student'];
-    }
-});
+      }
+    });
   }
-  updateStudent(student: Student) {
+
+  async updateStudent(student: Student) {
     this.updateStudentService.postData(student).subscribe(
-      res => {
-        alert("Success: Record has been added" + res);
+      async res => {
+        const alert = await this.alertController.create({
+          header: 'Success',
+          message: 'Record has been added',
+          buttons: ['OK']
+        });
+        await alert.present();
         this.dismiss(true);
       },
       async err => {
-        alert(err.message);
+        const alert = await this.alertController.create({
+          header: 'Error',
+          message: err.message,
+          buttons: ['OK']
+        });
+        await alert.present();
       }
     );
   }

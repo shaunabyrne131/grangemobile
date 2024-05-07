@@ -10,7 +10,7 @@ export class DeleteStudentsService {
 
   constructor(private http: HttpClient) { }
 
-  // Create getData() function thats makes http request
+  
   postData(data: any) {
     
     console.log('student id:' +data)
